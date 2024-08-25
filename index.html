@@ -1,11 +1,93 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="light">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- tailwindCSS And daisyUI -->
+
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://kit.fontawesome.com/8de9246c42.js" crossorigin="anonymous"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap');
+
+        body {
+            font-family: "Manrope", sans-serif;
+        }
+    </style>
     <title>Rinterio</title>
 </head>
-<body>
-    
+
+<body class="bg-stone-100 container">
+
+    <!-- header section -->
+
+    <header class="lg:pb-24 bg-gradient-to-t from-[white] to-[transparent]">
+        <nav class="flex pt-12 max-w-screen-xl mx-auto justify-between items-center">
+            <div class="flex items-center">
+                <i class="-rotate-45 p-2 text-black bg-lime-300 rounded-full fa-solid fa-arrow-right"></i>
+                <h3 class="text-3xl	font-extrabold	ml-5">Rinterio</h3>
+            </div>
+            <div class="flex gap-9 text-slate-500 cursor-pointer">
+                <p class="font-extrabold">Home</p>
+                <p>Services</p>
+                <p>Portfolio</p>
+                <p>Blogs</p>
+                <p>Contact Us</p>
+            </div>
+
+            <!-- Special button heh he. Click book consultant button. -->
+
+            <div class="flex gap-4 items-center">
+                <img class="w-12 h-12 p-2 bg-white border-slate-200 border-2 rounded-full"
+                    src="assets/icons8-search-96.png" alt="">
+                <div
+                    class="flex justify-center items-center w-12 h-12 p-2 bg-white border-slate-200 border-2 rounded-full">
+                    <img class="w-6 h-6 " src="assets/shopping-cart.png" alt="">
+                </div>
+                <!-- Open the modal using ID.showModal() method -->
+                <button class="flex items-center px-5 py-3 gap-2 bg-lime-300 rounded-[32px]"
+                    onclick="my_modal_2.showModal()">
+
+                    <h3 class="text-xl font-extrabold">Book Consult</h3>
+                    <i class=" -rotate-45 p-2 text-white bg-black rounded-3xl fa-solid fa-arrow-right"></i>
+                </button>
+                <dialog id="my_modal_2" class="modal">
+                    <div class="modal-box">
+                        <h3 class="text-lg font-bold">Congratulations!</h3>
+                        <p class="py-4">Your consultant has been booked.</p>
+                    </div>
+                    <form method="dialog" class="modal-backdrop">
+                        <button>close</button>
+                    </form>
+                </dialog>
+            </div>
+        </nav>
+
+        <!-- banner section -->
+
+        <div class="max-w-screen-xl mx-auto mt-10 flex flex-col justify-center items-center text-center">
+            <img src="assets/banner.png" alt="">
+            <div class="">
+                <h3 class="text-6xl	font-extrabold py-6 px-10">A barn house of this design has a striking appearance
+                </h3>
+                <p class="font-medium px-24">The barn house captivates with its blend of rustic charm and modern
+                    sophistication, featuring
+                    weathered wood, sleek metal accents, and large windows that flood the space with natural light.</p>
+            </div>
+            <div class="flex items-center mt-8 px-5 py-3 gap-2 bg-lime-200 rounded-[32px] ">
+                <h3 class="text-xl font-extrabold">View Details</h3>
+                <i class=" -rotate-45 p-2 text-black bg-lime-300 rounded-3xl fa-solid fa-arrow-right"></i>
+            </div>
+        </div>
+    </header>
+
+    <!-- main section -->
+
+    <main></main>
+
 </body>
+
 </html>
