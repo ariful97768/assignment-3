@@ -22,7 +22,7 @@
 
 <body class="bg-stone-100 ">
 
-    <!-- header section -->
+    <!-- header section and banner section -->
 
     <header class="px-5 pb-10 md:pb-20 md:px-8 lg:px-0 lg:pb-24 bg-gradient-to-t from-[white] to-[transparent]">
         <nav class="flex pt-10 max-w-screen-xl mx-auto justify-between items-center">
@@ -108,42 +108,50 @@
         </div>
     </header>
 
-    <!-- main section -->
-
     <main class="max-w-screen-xl mx-auto">
 
         <!-- about section -->
 
-        <section class="px-5 md:px-8 lg:px-0 lg:mt-28 md:mt-16 mt-8 lg:flex gap-9">
+        <section class="px-5 md:px-8 lg:px-0 lg:mt-24 md:mt-16 mt-8 lg:flex gap-9">
 
             <!-- left content -->
 
-            <div class="relative w-1/2 grid gap-6">
+            <div class="relative lg:w-1/2 grid gap-6">
                 <div>
-                    <button class=" flex items-center px-4 py-2 font-bold text-stone-700	 bg-white rounded-full ">
+                    <button
+                        class=" mx-auto lg:mx-0 flex items-center px-4 py-2 font-bold text-stone-700	 bg-white rounded-full ">
                         <i class="fa-solid fa-arrow-right"></i>
                         <p class="ml-2">
                             About Us
                         </p>
                     </button>
 
-                    <h3 class="py-4 md:pt-4 md:pb-6 font-bold text-2xl lg:text-4xl ">We design thoughtful, liveable
+                    <h3 class="py-4 md:pt-4 md:pb-6 font-bold text-2xl lg:text-4xl text-center">We design thoughtful,
+                        liveable
                         spaces</h3>
-                    <p class=" font-medium">The barn house captivates with its blend of rustic charm and
-                        modern sophistication, featuring weathered wood, sleek metal accents.</p>
+                    <p class=" text-center font-medium">At our core, we believe in creating spaces that reflect your
+                        unique
+                        lifestyle and personality. Our designs blend functionality and aesthetics to craft environments
+                        that are both beautiful and truly livable.</p>
                 </div>
-                <div class="flex gap-6 p-6 bg-white rounded-2xl	">
-                    <img src="assets/commercial.png" alt="">
-                    <div>
-                        <h3 class="mb-2 font-extrabold text-xl text-slate-700	">Commercial</h3>
-                        <p>The barn house captivates with its blend of rustic charm and modern.</p>
+                <div class="grid gap-6 grid-cols-1 md:grid-cols-2 lg:grid-cols-1">
+                    <div class="flex items-center gap-6 p-6 bg-white rounded-2xl	">
+                        <img class="w-16 h-16" src="assets/commercial.png" alt="">
+                        <div>
+                            <h3 class="mb-2 font-extrabold text-xl text-slate-700	">Commercial</h3>
+                            <p>Transforming workspaces into dynamic, inspiring environments that enhance productivity
+                                and
+                                brand identity.</p>
+                        </div>
                     </div>
-                </div>
-                <div class="flex gap-6 p-6 bg-white rounded-2xl">
-                    <img src="assets/residential.png" alt="">
-                    <div>
-                        <h3 class="mb-2 font-extrabold text-xl text-slate-700	">Commercial</h3>
-                        <p>The barn house captivates with its blend of rustic charm and modern.</p>
+                    <div class="flex items-center gap-6 p-6 bg-white rounded-2xl">
+                        <img  class="w-16 h-16" src="assets/residential.png" alt="">
+                        <div>
+                            <h3 class="mb-2 font-extrabold text-xl text-slate-700	">Residence</h3>
+                            <p>Creating bespoke living spaces that reflect your style and provide comfort for every
+                                moment
+                                of life."</p>
+                        </div>
                     </div>
                 </div>
                 <img class="hidden lg:block absolute -top-16 -left-9" src="assets/Vector.png" alt="">
@@ -151,55 +159,284 @@
 
             <!-- right content -->
 
-            <div class="">
+            <div class=" grid justify-center items-center mt-6 lg:mt-0">
                 <img class="rounded-2xl" src="assets/Rectangle.png" alt="">
             </div>
         </section>
 
         <!-- work process section -->
 
-        <section class="px-5 md:px-8 lg:px-0 lg:mt-28 md:mt-16 mt-8">
+        <section class="px-5 md:px-8 lg:px-0 lg:pb-24 lg:mt-24 md:mt-16 mt-8">
             <div class="text-center mb-6 lg:mb-8">
                 <button class="mx-auto flex items-center px-4 py-2 font-bold text-stone-700 bg-white rounded-full ">
                     <i class="fa-solid fa-arrow-right"></i>
                     <p class="ml-2">How we work</p>
                 </button>
                 <h3 class="font-bold text-2xl md:text-3xl lg:text-4xl pt-4 pb-4 md:pb-6">Our Work Process</h3>
-                <p class="font-medium lg:px-52 md:px-16">The barn house captivates with its blend of rustic charm and modern sophistication, featuring
-                    weathered wood, sleek metal accents.</p>
+                <p class="font-medium lg:px-52 md:px-16">Our work process is a seamless journey from concept to
+                    completion. We begin by understanding your vision, followed by meticulous planning and design. With
+                    close collaboration and attention to detail, we bring your dream space to life, ensuring every step
+                    aligns with your unique needs and style.</p>
             </div>
+
+            <!-- work process cards -->
+
             <div class="grid sm:gap-4 gap-6  grid-cols-1 md:grid-cols-2	 lg:grid-cols-4	">
                 <div class="rounded-2xl bg-pink-300	">
                     <div class="p-6">
                         <img src="assets/concept.png" alt="">
                         <h3 class="font-extrabold  text-xl my-2">Concept</h3>
-                        <p class="font-medium">The barn house captivates with its blend of rustic charm and modern.</p>
+                        <p class="font-medium">We capture your vision, setting the foundation for a design that reflects
+                            your style.</p>
                     </div>
                 </div>
                 <div class="rounded-2xl bg-yellow-300	">
                     <div class="p-6">
                         <img src="assets/flow-chart.png" alt="">
-                        <h3 class="font-extrabold  text-xl my-2">Concept</h3>
-                        <p class="font-medium">The barn house captivates with its blend of rustic charm and modern.</p>
+                        <h3 class="font-extrabold  text-xl my-2">Design Process</h3>
+                        <p class="font-medium">We turn ideas into reality, crafting a space that's uniquely yours.</p>
                     </div>
                 </div>
                 <div class="rounded-2xl bg-emerald-400">
                     <div class="p-6">
                         <img src="assets/vision.png" alt="">
-                        <h3 class="font-extrabold  text-xl my-2">Concept</h3>
-                        <p class="font-medium">The barn house captivates with its blend of rustic charm and modern.</p>
+                        <h3 class="font-extrabold  text-xl my-2">Supervision</h3>
+                        <p class="font-medium">We oversee every detail to ensure flawless execution and quality.</p>
                     </div>
                 </div>
                 <div class="rounded-2xl bg-blue-400	">
                     <div class="p-6">
                         <img src="assets/budget-planning.png" alt="">
-                        <h3 class="font-extrabold  text-xl my-2">Concept</h3>
-                        <p class="font-medium">The barn house captivates with its blend of rustic charm and modern.</p>
+                        <h3 class="font-extrabold  text-xl my-2">Budget Planning</h3>
+                        <p class="font-medium">We manage your budget to deliver a beautiful, cost-effective design.</p>
                     </div>
                 </div>
             </div>
         </section>
+
+        <!-- portfolio section -->
+
+        <section class="px-5 rounded-3xl md:px-8 lg:px-0 py-14 bg-white">
+            <div>
+                <button
+                    class="mx-auto text-base font-bold text-slate-700 flex items-center px-4 py-2 gap-2 bg-lime-100 rounded-[32px]">
+                    <i class=" fa-solid fa-arrow-right"></i>
+                    <h3>Explore our Latest works</h3>
+                </button>
+                <div class="text-center max-w-2xl mx-auto">
+                    <h3 class="font-bold lg:text-4xl md:text-3xl text-2xl mt-4 mb-8">Our Latest Portfolio</h3>
+                    <p class="text-slate-700 font-medium">Explore our latest projects, where thoughtful design meets
+                        exceptional craftsmanship, creating spaces that are both stylish and functional.</p>
+                </div>
+            </div>
+
+            <!-- grid cards -->
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 mt-8 mx-8">
+                <div class="lg:col-span-3 md:col-span-2 col-span-1 md:flex gap-6 p-6 border rounded-2xl ">
+                    <!-- grid image -->
+                    <div>
+                        <img src="assets/img1.png" alt="">
+                    </div>
+                    <!-- grid text -->
+                    <div>
+                        <h3 class="font-extrabold text-xl lg:text-2xl">Residential</h3>
+                        <p class="font-medium">Designing homes that blend comfort with style, creating spaces that truly
+                            feel like your own.</p>
+                        <button class="flex items-center gap-2">
+                            <h3 class="font-extrabold text-xl">View details</h3>
+                            <i class="-rotate-45 p-2 text-black bg-lime-300 rounded-full fa-solid fa-arrow-right"></i>
+                        </button>
+                    </div>
+                </div>
+                <div class="p-6 border rounded-2xl ">
+                    <img src="assets/img2.png" alt="">
+                </div>
+                <div class="  p-6 border rounded-2xl ">
+                    <img src="assets/img5.png" alt="">
+                </div>
+                <div class="md:col-span-2 md:flex gap-6 p-6 border rounded-2xl">
+                    <!-- grid image -->
+                    <div class="">
+                        <img src="assets/img4.png" alt="">
+                    </div>
+                    <!-- grid text -->
+                    <div class="max-w-72">
+                        <h3 class="font-extrabold text-xl lg:text-2xl">Commercial</h3>
+                        <p class="font-medium">Crafting professional environments that inspire productivity and reflect
+                            your brand's identity.</p>
+                        <button class="flex items-center gap-2">
+                            <h3 class="font-extrabold text-xl">View details</h3>
+                            <i class="-rotate-45 p-2 text-black bg-lime-300 rounded-full fa-solid fa-arrow-right"></i>
+                        </button>
+                    </div>
+                </div>
+                <div class="flex items-center justify-center p-6 border rounded-2xl ">
+                    <img class="object-cover w-80" src="assets/img3.png" alt="">
+                </div>
+                <div class=" lg:hidden object-fill p-6 border rounded-2xl ">
+                    <img class="object-fill" src="assets/img2.png" alt="">
+                </div>
+            </div>
+        </section>
+
+        <!-- articles section -->
+
+        <section class="px-5 md:px-8 lg:px-0 lg:pb-24 lg:mt-24 md:mt-16 mt-8">
+            <div>
+                <button
+                    class="mx-auto text-base font-bold text-slate-700 flex items-center px-4 py-2 gap-2 bg-lime-100 rounded-[32px]">
+                    <i class=" fa-solid fa-arrow-right"></i>
+                    <h3>Rinterio News</h3>
+                </button>
+                <div class="text-center max-w-2xl mx-auto">
+                    <h3 class="lg:font-bold text-2xl md:text-3xl lg:text-4xl mt-4 font-manrope mb-8">Read Our Articles
+                        and News</h3>
+                    <p class="text-slate-700 font-medium">Stay updated with our latest insights and trends in interior
+                        design. Read our articles and news for tips, inspiration, and industry updates to keep your
+                        space ahead of the curve.</p>
+                </div>
+            </div>
+
+            <!-- article cards -->
+
+            <div class="mt-8 grid gap-6 grid-cols-1 lg:grid-cols-3 ">
+                <div class="flex flex-col md:flex-row lg:flex-col gap-4 p-6 rounded-2xl bg-white">
+                    <div class="">
+                        <img src="assets/article1.png" alt="">
+                    </div>
+
+                    <div class=" grid gap-2">
+                        <div class="flex gap-4">
+                            <div><i class="fa-regular fa-calendar-days"></i> June 4, 2024</div>
+                            <div class="flex items-center gap-2"><i class="fa-regular fa-user"></i>
+                                <p>ByAdimn</p>
+                            </div>
+                        </div>
+
+                        <h3 class="font-extrabold text-xl pr-6">Trends in Commercial Design for 2024</h3>
+                        <p>Explore the latest trends shaping modern workspaces and how to incorporate them into your
+                            business environment. </p>
+                        <button class=" flex items-center gap-2">
+                            <h3 class="font-bold text-lg">Read More</h3>
+                            <i class="-rotate-45 p-2 text-black bg-lime-300 rounded-full fa-solid fa-arrow-right"></i>
+                        </button>
+                    </div>
+                </div>
+                <div class="flex flex-col md:flex-row lg:flex-col gap-4 p-6 rounded-2xl bg-white">
+                    <div class="">
+                        <img src="assets/article2.png" alt="">
+                    </div>
+
+                    <div class=" grid gap-2">
+                        <div class="flex gap-4">
+                            <div><i class="fa-regular fa-calendar-days"></i> August 23, 2024</div>
+                            <div class="flex items-center gap-2"><i class="fa-regular fa-user"></i>
+                                <p>ByAdimn</p>
+                            </div>
+                        </div>
+
+                        <h3 class="font-extrabold text-xl pr-6">Sustainable Materials in Interior Design</h3>
+                        <p>Learn about eco-friendly materials that enhance aesthetics while promoting sustainability in
+                            your home or office.</p>
+                        <button class=" flex items-center gap-2">
+                            <h3 class="font-bold text-lg">Read More</h3>
+                            <i class="-rotate-45 p-2 text-black bg-lime-300 rounded-full fa-solid fa-arrow-right"></i>
+                        </button>
+                    </div>
+                </div>
+                <div class="flex flex-col md:flex-row lg:flex-col gap-4 p-6 rounded-2xl bg-white">
+                    <div class="">
+                        <img src="assets/article3.png" alt="">
+                    </div>
+
+                    <div class=" grid gap-2">
+                        <div class="flex gap-4">
+                            <div><i class="fa-regular fa-calendar-days"></i> March 14, 2024</div>
+                            <div class="flex items-center gap-2"><i class="fa-regular fa-user"></i>
+                                <p>ByAdimn</p>
+                            </div>
+                        </div>
+
+                        <h3 class="font-extrabold text-xl pr-6">Maximizing Small Spaces: Innovative Design Tips</h3>
+                        <p>Discover smart design strategies to make the most of compact living areas and create a
+                            functional, stylish space.</p>
+                        <button class=" flex items-center gap-2">
+                            <h3 class="font-bold text-lg">Read More</h3>
+                            <i class="-rotate-45 p-2 text-black bg-lime-300 rounded-full fa-solid fa-arrow-right"></i>
+                        </button>
+                    </div>
+                </div>
+
+            </div>
+        </section>
     </main>
+
+    <!-- discuss section -->
+
+    <section class="bg-no-repeat bg-cover bg-[url('/assets/bg.jpg')]">
+        <div class="max-w-[970px] px-6 py-8 md:px-20 lg:pt-24 mx-auto">
+            <div class="text-center">
+                <button
+                    class="mx-auto text-base font-bold text-slate-700 flex items-center px-4 py-2 gap-2 bg-lime-100 rounded-[32px]">
+                    <i class=" fa-solid fa-arrow-right"></i>
+                    <h3>Let's Connect</h3>
+                </button>
+                <h3 class="font-bold mt-4 mb-4 md:mb-6 lg:text-4xl md:text-3xl text-2xl">Let's Discuss Next Project</h3>
+                <p class="font-medium text-sm text-slate-700">Get a sneak peek into our upcoming projects and see how
+                    we're pushing the boundaries of design. Stay tuned for innovative concepts and fresh ideas that will
+                    redefine your space.</p>
+            </div>
+            <div class="mt-8 grid grid-cols-1 md:grid-cols-2	 gap-6 ">
+                <input placeholder="First Name*" class="bg-white py-3 pl-6 rounded-3xl" type="text">
+                <input placeholder="Last Name*" class="bg-white py-3 pl-6 rounded-3xl" type="text">
+                <input placeholder="Phone Number*" class="bg-white py-3 pl-6 rounded-3xl" type="text">
+                <input placeholder="Email Address*" class="bg-white py-3 pl-6 rounded-3xl" type="email">
+                <input placeholder="Write your message here" class="bg-white pt-5 pb-28 pl-6 rounded-3xl md:col-span-2"
+                    type="text">
+                <button
+                    class="flex md:col-span-2 justify-center items-center mt-6 md:mt-8 py-3 gap-2 bg-lime-400 rounded-[32px] ">
+                    <h3 class="text-xl font-extrabold">Send Mail</h3>
+                    <i class=" -rotate-45 p-2 text-white bg-black rounded-3xl fa-solid fa-arrow-right"></i>
+                </button>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- footer -->
+
+    <footer class="bg-black">
+        <div class="max-w-screen-xl px-5 pb-16 lg:pb-24 md:px-16 text-center lg:pt-24 pt-16 mx-auto">
+
+
+            <button class="flex mx-auto mb-4 items-center">
+                <i class="-rotate-45 p-2 text-black bg-lime-300 rounded-full fa-solid fa-arrow-right"></i>
+                <h3 class="text-3xl	font-extrabold text-white  ml-5">Rinterio</h3>
+            </button>
+            <p class="md:mb-12 text-[#737373] mb-8">
+                Rinterio merges innovation with elegance, crafting bespoke interiors that reflect your unique vision.
+                Our designs transform spaces into immersive experiences, blending functionality with style to create
+                environments that inspire and delight.
+            </p>
+
+
+            <div
+                class="gap-8 md:gap-24 lg:gap-28 flex justify-center flex-col text-center md:flex-row text-slate-500 cursor-pointer">
+                <p class="font-extrabold">Home</p>
+                <p>Services</p>
+                <p>Portfolio</p>
+                <p>Blogs</p>
+                <p>Contact Us</p>
+            </div>
+
+
+            <button class="flex mt-8 md:mt-12 mx-auto items-center px-5 py-3 gap-2 bg-lime-300 rounded-[32px]">
+
+                <h3 class="text-xl font-extrabold">Book Consult</h3>
+                <i class=" -rotate-45 p-2 text-white bg-black rounded-3xl fa-solid fa-arrow-right"></i>
+            </button>
+        </div>
+    </footer>
 </body>
 
 </html>
